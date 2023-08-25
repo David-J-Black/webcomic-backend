@@ -1,6 +1,6 @@
 from typing import Dict, List
 
-from src.models.ChapterComponents import ComicChapter, ComicPage, ComicPageWithoutImage, ComicChapterExtended
+from src.models.ChapterComponents import ComicChapter, ComicPage, ComicChapterExtended
 from src.repositorys.Repositories import ChapterRepository
 from flask import Flask
 
@@ -27,7 +27,7 @@ class ChapterCache:
             chapters: list[ComicChapter] = self._chapter_repository.get_all_chapters()
 
             for chapter in chapters:
-                pages: list[ComicPageWithoutImage] = self._chapter_repository.get_all_chapter_pages_wo_image(chapter.chapter_id)
+                pages: list[ComicPage] = self._chapter_repository.get_all_chapter_pages_wo_image(chapter.chapter_id)
                 extended_chapter = ComicChapterExtended(chapter, pages)
 
                 self._chapter_cache_by_number[chapter.chapter_number] = extended_chapter
@@ -68,3 +68,7 @@ class ChapterCache:
             return self._chapter_cache_by_id[chapter_id]
         else:
             return None
+
+# TODO: Have this return a number for number of items loaded
+    def refresh(self) -> None:
+        self.load()

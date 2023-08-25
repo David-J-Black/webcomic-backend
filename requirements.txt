@@ -9,6 +9,7 @@ itsdangerous==2.1.2
 Jinja2==3.1.2
 MarkupSafe==2.1.2
 mysql-connector-python==8.1.0
+Pillow==10.0.0
 protobuf==4.21.12
 PyMySQL==1.1.0
 PyYAML==6.0.1

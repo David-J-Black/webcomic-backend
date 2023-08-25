@@ -4,13 +4,15 @@ from typing import List, Dict
 from src.app import database
 
 
-class ComicPageWithoutImage(database.Model):
+class ComicPage(database.Model):
     page_id = database.Column(database.Integer, primary_key=True)
     chapter_id = database.Column(database.Integer)
     page_number = database.Column(database.Integer)
     release_date = database.Column(database.Date, default=datetime.utcnow())
     description = database.Column(database.String)
     page_position = database.Column(database.String(1))
+    image_name = database.Column(database.String(30))
+    # image_data: bytes
     status = database.Column(database.String(1))
     created_at = database.Column(database.Date, default=datetime.utcnow())
     updated_at = database.Column(database.Date, default=datetime.utcnow())
@@ -18,12 +20,6 @@ class ComicPageWithoutImage(database.Model):
     def __repr__(self):
         return f'<Page: ChapterID{self.chapter_id}: Page Number;{self.page_number}>'
 
-
-class ComicPage(ComicPageWithoutImage):
-    comic_image = database.Column(database.LargeBinary)
-
-    def __repr__(self):
-        return f'<Page:{self.page_number}>'
 
 
 class ComicChapter(database.Model):

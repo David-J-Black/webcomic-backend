@@ -1,6 +1,6 @@
 from typing import List
 
-from src.models.ChapterComponents import ComicPage, ComicChapter, ComicPageWithoutImage
+from src.models.ChapterComponents import ComicPage, ComicChapter
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import text
 
@@ -42,7 +42,7 @@ class ChapterRepository:
         comic_chapters: List[ComicChapter] = self.db.session.execute(query).fetchall()
         return comic_chapters
 
-    def get_all_chapter_pages_wo_image(self, chapter_id: int) -> list[ComicPageWithoutImage]:
+    def get_all_chapter_pages_wo_image(self, chapter_id: int) -> list[ComicPage]:
         """
         Get all the pages of a chapter w/o images in order
         :param chapter_id: Id of the chapter

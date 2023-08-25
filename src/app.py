@@ -22,7 +22,7 @@ def get_page(page_number):
 @app.route('/page/<int:chapter_number>/<int:page_number>', methods=['GET'])
 def get_page2(chapter_number: int, page_number: int):
     try:
-        return Response(chapter_service.get_comic_page(chapter_number, page_number), content_type='image/png')
+        return Response(chapter_service.get_comic_page_image(chapter_number, page_number), content_type='image/png')
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
@@ -38,11 +38,11 @@ def get_chapter(chapter_number: int) -> Response:
         return jsonify({'error': str(e)},  500)
 
 
-@app.route('/manage/uploadPage/<int:chapter_number>/<int:page_number>', methods=['POST'])
-def upload_page(chapter_number, page_number):
+@app.route('/manage/refreshCaches')
+def refresh_caches():
     try:
-        image_data: bytes = request.get_data()
-        return chapter_service.upload_comic_page(chapter_number, page_number, image_data)
+        chapter_cache.refresh()
+        return jsonify({'Caches': 'refreshed!'})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 

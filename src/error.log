@@ -1,0 +1,37 @@
+[2023-08-30 05:55:36 +0000] [47998] [INFO] Starting gunicorn 21.2.0
+[2023-08-30 05:55:36 +0000] [47998] [INFO] Listening at: unix:/webcomic-backend.sock (47998)
+[2023-08-30 05:55:36 +0000] [47998] [INFO] Using worker: sync
+[2023-08-30 05:55:36 +0000] [47999] [INFO] Booting worker with pid: 47999
+[2023-08-30 05:55:36 +0000] [48000] [INFO] Booting worker with pid: 48000
+[2023-08-30 05:56:52 +0000] [47999] [INFO] Worker exiting (pid: 47999)
+[2023-08-30 05:56:52 +0000] [48000] [INFO] Worker exiting (pid: 48000)
+[2023-08-30 05:56:52 +0000] [47998] [INFO] Handling signal: term
+[2023-08-30 05:56:52 +0000] [47998] [ERROR] Worker (pid:47999) was sent SIGTERM!
+[2023-08-30 05:56:52 +0000] [47998] [INFO] Shutting down: Master
+[2023-08-30 05:56:53 +0000] [48209] [INFO] Starting gunicorn 21.2.0
+[2023-08-30 05:56:53 +0000] [48209] [INFO] Listening at: unix:/webcomic-backend.sock (48209)
+[2023-08-30 05:56:53 +0000] [48209] [INFO] Using worker: sync
+[2023-08-30 05:56:53 +0000] [48213] [INFO] Booting worker with pid: 48213
+[2023-08-30 05:56:53 +0000] [48214] [INFO] Booting worker with pid: 48214
+[2023-08-30 05:57:20 +0000] [48214] [INFO] Worker exiting (pid: 48214)
+[2023-08-30 05:57:20 +0000] [48213] [INFO] Worker exiting (pid: 48213)
+[2023-08-30 05:57:20 +0000] [48209] [INFO] Handling signal: term
+[2023-08-30 05:57:20 +0000] [48209] [ERROR] Worker (pid:48214) was sent SIGTERM!
+[2023-08-30 05:57:20 +0000] [48209] [ERROR] Worker (pid:48213) was sent SIGTERM!
+[2023-08-30 05:57:20 +0000] [48209] [INFO] Shutting down: Master
+[2023-08-30 05:57:21 +0000] [48265] [INFO] Starting gunicorn 21.2.0
+[2023-08-30 05:57:21 +0000] [48265] [INFO] Listening at: unix:/webcomic-backend.sock (48265)
+[2023-08-30 05:57:21 +0000] [48265] [INFO] Using worker: sync
+[2023-08-30 05:57:21 +0000] [48269] [INFO] Booting worker with pid: 48269
+[2023-08-30 05:57:21 +0000] [48270] [INFO] Booting worker with pid: 48270
+[2023-08-30 06:12:48 +0000] [48270] [INFO] Worker exiting (pid: 48270)
+[2023-08-30 06:12:48 +0000] [48269] [INFO] Worker exiting (pid: 48269)
+[2023-08-30 06:12:48 +0000] [48265] [ERROR] Worker (pid:48270) was sent SIGTERM!
+[2023-08-30 06:12:48 +0000] [48265] [INFO] Handling signal: term
+[2023-08-30 06:12:48 +0000] [48265] [ERROR] Worker (pid:48269) was sent SIGTERM!
+[2023-08-30 06:12:48 +0000] [48265] [INFO] Shutting down: Master
+[2023-08-30 06:12:49 +0000] [49520] [INFO] Starting gunicorn 21.2.0
+[2023-08-30 06:12:49 +0000] [49520] [INFO] Listening at: http://127.0.0.1:6900 (49520)
+[2023-08-30 06:12:49 +0000] [49520] [INFO] Using worker: sync
+[2023-08-30 06:12:49 +0000] [49522] [INFO] Booting worker with pid: 49522
+[2023-08-30 06:12:49 +0000] [49524] [INFO] Booting worker with pid: 49524

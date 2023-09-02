@@ -1,7 +1,7 @@
 from typing import Dict, List
 
-from src.models.ChapterComponents import ComicChapter, ComicPage, ComicChapterExtended
-from src.repositorys.Repositories import ChapterRepository
+from models.ChapterComponents import ComicChapter, ComicPage, ComicChapterExtended
+from repositorys.Repositories import ChapterRepository
 from flask import Flask
 
 

@@ -1,0 +1,14 @@
+[Unit]
+Description=Gunicorn instance to serve webcomic backend
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+Restart=On-failure
+Environment=/home/ubuntu/wwebcomic-backend/venv/bin
+WorkingDirectory=/home/ubuntu/webcomic-backend/
+ExecStart=sudo bash start-server.sh
+
+[Install]
+WantedBy=multi-user.target

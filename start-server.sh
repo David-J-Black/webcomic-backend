@@ -1,5 +1,4 @@
-current_location=$(dirname, "$0")
-requirements_location =
-
-sudo pip3 install requirements.txt
-sudo bash python3
+source "venv/bin/activate"
+cd src
+gunicorn --bind 127.0.0.1:6900 --workers=2 --access-logfile access.log --error-logfile error.log wsgi:app
+deactivate

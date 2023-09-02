@@ -1,6 +1,6 @@
 from typing import List
 
-from src.models.ChapterComponents import ComicPage, ComicChapter
+from models.ChapterComponents import ComicPage, ComicChapter
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import text
 

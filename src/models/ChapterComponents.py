@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import List, Dict
 
-from src.app import database
+from app import database
 
 
 class ComicPage(database.Model):

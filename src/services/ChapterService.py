@@ -1,9 +1,8 @@
 import traceback
 
-from src.models.ChapterComponents import ComicPage, ComicChapter, ComicChapterExtended
-from src.repositorys.Repositories import ChapterRepository
-from src.services.caches import ChapterCache
-from PIL import Image
+from models.ChapterComponents import ComicPage, ComicChapter, ComicChapterExtended
+from repositorys.Repositories import ChapterRepository
+from services.caches import ChapterCache
 
 
 class ChapterService:
@@ -14,40 +13,6 @@ class ChapterService:
                  ):
         self._chapter_repository = chapter_repository
         self._chapter_cache = chapter_cache
-
-    # def upload_comic_page(self, chapter_number: int, page_number: int, image_data: bytes) -> str:
-    #     """
-    #     Used to save a page
-    #     """
-    #     try:
-    #
-    #         chapter: ComicChapter = self._chapter_repository.get_chapter(chapter_number)
-    #
-    #         # Is this a valid chapter?
-    #         if chapter is None:
-    #             raise Exception(f"Could not find chapter # {chapter_number}!")
-    #
-    #         page = ComicPage(chapter_id=chapter.chapter_id,
-    #                          page_number=page_number,
-    #                          comic_image=image_data,
-    #                          page_position='R',
-    #                          status='A')
-    #
-    #         # See whether our page is going to be left side or right side
-    #         if page_number > 0:
-    #             previous_page: ComicPage = self._chapter_repository.get_comic_page(1, page_number - 1)
-    #             if previous_page is not None and previous_page.page_position == 'R':
-    #                 page.page_position = 'L'
-    #
-    #         success_page = self._chapter_repository.save_comic_page(page)
-    #         if success_page is not None:
-    #             return "Success"
-    #         else:
-    #             raise Exception('Unable to save page!')
-    #
-    #     except Exception as e:
-    #         print(traceback.format_exc())
-    #         raise e
 
     def get_comic_page_image(self, chapter_number: int, page_number: int) -> bytes:
         """

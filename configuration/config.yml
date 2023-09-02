@@ -1,3 +1,3 @@
 
 database-config:
-  uri: 'mysql+mysqlconnector://root:password@localhost/webcomic'
+  uri: 'mysql+mysqlconnector://root:Password1!@localhost/webcomic'

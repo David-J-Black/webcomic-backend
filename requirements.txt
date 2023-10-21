@@ -19,4 +19,4 @@ PyYAML==6.0.1
 SQLAlchemy==2.0.19
 sqlparse==0.4.4
 typing_extensions==4.7.1
-Werkzeug==2.3.6
+Werkzeug==2.3.7

@@ -1,6 +1,8 @@
 from datetime import datetime
 from typing import List, Dict
 
+from sqlalchemy.ext.hybrid import hybrid_property, hybrid_method
+
 from app import database
 
 
@@ -21,8 +23,10 @@ class ComicPage(database.Model):
         return f'<Page: ChapterID{self.chapter_id}: Page Number;{self.page_number}>'
 
 
-
 class ComicChapter(database.Model):
+    """
+    The bare minimum comic information stored in the comic_chapter row
+    """
     chapter_id = database.Column(database.Integer, primary_key=True)
     chapter_number = database.Column(database.Integer)
     title = database.Column(database.String)
@@ -36,7 +40,6 @@ class ComicChapter(database.Model):
 
 
 class ComicChapterExtended:
-
     page_count: int
     start_page_number: int
     end_page_number: int
@@ -71,7 +74,7 @@ class ComicChapterExtended:
             "firstPage": self.start_page_number,
             "lastPage": self.end_page_number,
             "pageCount": len(self.pages)
-    }
+        }
 
     def to_dto(self) -> Dict[str, any]:
         return {
@@ -86,3 +89,20 @@ class ComicChapterExtended:
             "pageCount": len(self.pages)
         }
 
+
+class ComicPageExtended:
+    """
+        TODO: Make a constructor for this that takes in page comments
+    """
+    def __init__(self, comic_page: ComicPage,
+                 comic_chapter: ComicChapterExtended):
+        self.comic_page = comic_page
+        self.comic_chapter = comic_chapter
+
+    def to_dto(self) -> Dict[str, any]:
+        return {
+            "pageNumber": self.comic_page.page_number,
+            "chapter": self.comic_chapter.to_dto(),
+            "releaseDate": self.comic_page.release_date,
+            "description": self.comic_page.description,
+        }

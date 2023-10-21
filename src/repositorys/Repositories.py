@@ -2,14 +2,13 @@ from typing import List
 
 from models.ChapterComponents import ComicPage, ComicChapter
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import text
+from sqlalchemy import text, TextClause
 
 
-class ChapterRepository:
+class Repository:
 
     def __init__(self, database: SQLAlchemy):
         self.db = database
-        print('test2')
 
     def get_comic_page_legacy(self, page_id: int) -> ComicPage:
         query = f"select * from comic_page where page_id = {page_id} and status = 'A'"
@@ -33,12 +32,12 @@ class ChapterRepository:
         return comic_page
 
     def get_chapter(self, chapter_num: int) -> ComicChapter:
-        query = text(f"select * from comic_chapter where chapter_number = {chapter_num} and status = 'A'")
-        comic_chapter = self.db.session.execute(query).fetchone()
+        query: TextClause = text(f"select * from comic_chapter where chapter_number = {chapter_num} and status = 'A'")
+        comic_chapter: ComicChapter = self.db.session.execute(query).fetchone()
         return comic_chapter
 
     def get_all_chapters(self) -> list[ComicChapter]:
-        query = text(f"select * from comic_chapter where status = 'A'")
+        query: TextClause = text(f"select * from comic_chapter where status = 'A'")
         comic_chapters: List[ComicChapter] = self.db.session.execute(query).fetchall()
         return comic_chapters
 

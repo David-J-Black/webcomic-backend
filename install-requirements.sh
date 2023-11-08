@@ -5,6 +5,9 @@
 
 current_location=$(dirname "$0")
 
+# Delete if we never need this?
+#requirements_location="$current_location/requirements.txt"
+
 # Install our requirements
 # - Angy because i'll install this copy of python3.11 and it says I'm running 3.10.3 >:(
 sudo apt install -y python3  python3-pip python3-venv nginx unzip

@@ -35,3 +35,79 @@
 [2023-08-30 06:12:49 +0000] [49520] [INFO] Using worker: sync
 [2023-08-30 06:12:49 +0000] [49522] [INFO] Booting worker with pid: 49522
 [2023-08-30 06:12:49 +0000] [49524] [INFO] Booting worker with pid: 49524
+[2023-11-08 01:53:28 +0000] [14550] [INFO] Starting gunicorn 21.2.0
+[2023-11-08 01:53:28 +0000] [14550] [INFO] Listening at: http://127.0.0.1:6900 (14550)
+[2023-11-08 01:53:28 +0000] [14550] [INFO] Using worker: sync
+[2023-11-08 01:53:28 +0000] [14551] [INFO] Booting worker with pid: 14551
+[2023-11-08 01:53:28 +0000] [14552] [INFO] Booting worker with pid: 14552
+[2023-11-08 01:53:29 +0000] [14551] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/bitnami/webcomic-backend/src/wsgi.py", line 5, in <module>
+    from services.Services import ChapterService
+  File "/home/bitnami/webcomic-backend/src/services/Services.py", line 5, in <module>
+    from services.caches import ChapterCache
+  File "/home/bitnami/webcomic-backend/src/services/caches.py", line 9, in <module>
+    class ChapterCache:
+  File "/home/bitnami/webcomic-backend/src/services/caches.py", line 82, in ChapterCache
+    def get_chapter_by_number(self, chapter_num) -> ComicChapterExtended | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+[2023-11-08 01:53:29 +0000] [14552] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/bitnami/webcomic-backend/venv/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/bitnami/webcomic-backend/src/wsgi.py", line 5, in <module>
+    from services.Services import ChapterService
+  File "/home/bitnami/webcomic-backend/src/services/Services.py", line 5, in <module>
+    from services.caches import ChapterCache
+  File "/home/bitnami/webcomic-backend/src/services/caches.py", line 9, in <module>
+    class ChapterCache:
+  File "/home/bitnami/webcomic-backend/src/services/caches.py", line 82, in ChapterCache
+    def get_chapter_by_number(self, chapter_num) -> ComicChapterExtended | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+[2023-11-08 01:53:29 +0000] [14551] [INFO] Worker exiting (pid: 14551)
+[2023-11-08 01:53:29 +0000] [14552] [INFO] Worker exiting (pid: 14552)
+[2023-11-08 01:53:29 +0000] [14550] [ERROR] Worker (pid:14551) exited with code 3
+[2023-11-08 01:53:59 +0000] [14550] [ERROR] Shutting down: Master
+[2023-11-08 01:53:59 +0000] [14550] [ERROR] Reason: Worker failed to boot.

@@ -10,7 +10,7 @@ current_location=$(dirname "$0")
 
 # Install our requirements
 # - Angy because i'll install this copy of python3.11 and it says I'm running 3.10.3 >:(
-sudo apt install -y python3  python3-pip python3-venv nginx unzip
+sudo apt install -y python3  python3-pip python3-venv unzip
 
 python3 -m venv venv
 sudo chmod -R +rwx venv
@@ -31,8 +31,6 @@ sudo systemctl daemon-reload
 sudo systemctl enable webcomic.service
 sudo systemctl start
 sudo systemctl restart nginx.service 
-
-sudo bash scripts/install-mysql.sh
 
 # Activate our python venv then install all the crap the server
 # Needs to run

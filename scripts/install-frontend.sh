@@ -8,12 +8,12 @@ cd "$script_directory/.." || exit
 base_location=$(pwd)
 
 location_of_zip="$base_location/filesToMoveUponInstallation/package.zip"
-frontend_from_zip="dist/dist/webcomic-frontend/*"
+frontend_from_zip="dist/webcomic-frontend/*"
 destination_of_unzip="dist"
 nginx_serve_folder="/var/www"
 
 # Setup the apache folder for the frontend
-sudo unzip -f $location_of_zip -d dist
+sudo unzip -o $location_of_zip
 sudo cp -r -f $frontend_from_zip $nginx_serve_folder
 sudo mkdir -p /var/www
 sudo chown -R www-data:www-data /var/www

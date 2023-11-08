@@ -26,10 +26,10 @@ sudo cp filesToMoveUponInstallation/nginxWebcomic.conf /etc/nginx/nginx.conf
 sudo systemctl disable apache2.service
 
 # setting up services
-sudo cp "$current_location/filesToMoveUponInstallation/backend.service" /etc/systemd/system/webcomic-backend.service
-sudo systemctl daemon-reload
-sudo systemctl enable webcomic.service
-sudo systemctl start
+
+
+sudo systemctl 
+
 sudo systemctl restart nginx.service 
 
 # Activate our python venv then install all the crap the server

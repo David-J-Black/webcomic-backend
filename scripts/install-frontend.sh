@@ -6,16 +6,20 @@ echo "- Installing Webcomic frontend...-"
 script_directory=$(dirname "$0")
 cd "$script_directory/.." || exit
 base_location=$(pwd)
+
 location_of_zip="$base_location/filesToMoveUponInstallation/package.zip"
-destination_of_unzip="/var/www"
+frontend_from_zip="dist/dist/webcomic-frontend/*"
+destination_of_unzip="dist"
+nginx_serve_folder="/var/www"
 
 # Setup the apache folder for the frontend
+sudo unzip -f $location_of_zip -d dist
+sudo cp -r -f $frontend_from_zip $nginx_serve_folder
 sudo mkdir -p /var/www
 sudo chown -R www-data:www-data /var/www
 
 # Move all the necessary files
-sudo rm -R $destination_of_unzip/*
-sudo unzip $location_of_zip -d $destination_of_unzip
+sudo rm -R -f dist
 
 # Directories (recursively) - execute permissions
 sudo find /var/www -type d -exec chmod 755 {} \;

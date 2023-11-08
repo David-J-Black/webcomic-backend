@@ -9,7 +9,7 @@ sudo apt -y install nginx unzip
 script_directory=$(dirname "$0")
 working_directory="$( cd .. )"
 cd "$script_directory/.."
-pwd
+
 
 # setting up services
 echo "---About to setup the backend service---"

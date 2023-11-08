@@ -79,13 +79,13 @@ class ChapterCache:
         chapter.connect_neighbors(previous_chapter=prev_dto,
                                   next_chapter=next_dto)
 
-    def get_chapter_by_number(self, chapter_num) -> ComicChapterExtended | None:
+    def get_chapter_by_number(self, chapter_num) -> ComicChapterExtended:
         if chapter_num in self._chapter_cache_by_number:
             return self._chapter_cache_by_number[chapter_num]
         else:
             return None
 
-    def get_chapter_by_id(self, chapter_id) -> ComicChapterExtended | None:
+    def get_chapter_by_id(self, chapter_id) -> ComicChapterExtended:
         if chapter_id in self._chapter_cache_by_id:
             return self._chapter_cache_by_id[chapter_id]
         else:

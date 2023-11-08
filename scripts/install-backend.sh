@@ -18,7 +18,12 @@ echo "-- backend service loaded in system folder --"
 sudo systemctl daemon-reload
 sudo systemctl enable webcomic.service
 sudo systemctl restart nginx.service
+sudo systemctl restart webcomic.service
 
 git config --global user.email "davidblacktheemployee@gmail.com"
 git config --global user.name "David Black"
+
+sudo systemctl status webcomic.service
+sudo systemctl status nginx.service
+
 echo "~ Fin ~"

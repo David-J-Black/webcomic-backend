@@ -3,11 +3,11 @@ Description=Gunicorn instance to serve webcomic backend
 After=network.target
 
 [Service]
-User=bitnami
+User=ubuntu
 Group=www-data
 Restart=on-failure
-Environment="PATH=/home/bitnami/webcomic-backend/venv/bin"
-WorkingDirectory=/home/bitnami/webcomic-backend/
+Environment="PATH=/home/ubuntu/webcomic-backend/venv/bin"
+WorkingDirectory=/home/ubuntu/webcomic-backend/
 ExecStart=sudo bash start-server.sh
 
 [Install]

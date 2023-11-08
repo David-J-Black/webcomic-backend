@@ -15,3 +15,6 @@ sudo systemctl daemon-reload
 sudo systemctl enable webcomic.service
 sudo systemctl start
 sudo systemctl restart nginx.service sudo
+
+  git config --global user.email "davidblacktheemployee@gmail.com"
+  git config --global user.name "David Black"

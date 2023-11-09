@@ -92,7 +92,9 @@ class ComicChapterExtended:
 
 class ComicPageExtended:
     """
-        TODO: Make a constructor for this that takes in page comments
+    This is how a comic page is stored in the cash
+
+    TODO: Make a constructor for this that takes in page comments
     """
     def __init__(self, comic_page: ComicPage,
                  comic_chapter: ComicChapterExtended):
@@ -100,6 +102,12 @@ class ComicPageExtended:
         self.comic_chapter = comic_chapter
 
     def to_dto(self) -> Dict[str, any]:
+        """
+        When we send comic page info to the frontend,
+        the dto is the simplified versoin with only the
+        stuff the frontend needs to know.
+        :return:
+        """
         return {
             "pageNumber": self.comic_page.page_number,
             "chapter": self.comic_chapter.to_dto(),

@@ -1,3 +1,0 @@
-
-database-config:
-  uri: 'mysql+mysqlconnector://backend:PeanutButter69!@localhost/webcomic'

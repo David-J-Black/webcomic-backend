@@ -1,10 +1,9 @@
-import yaml
-from typing import Dict
+import argparse
 
 
-def read_config(path: str) -> Dict:
-    config: Dict
-    # Read from YAML file
-    with open(path, 'r') as file:
-        config = yaml.safe_load(file)
-    return config
+class Config:
+
+    def __init__(self):
+
+        self.environment: str
+        self.database_path = 'mysql+mysqlconnector://root:password@localhost/webcomic'

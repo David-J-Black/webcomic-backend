@@ -12,7 +12,7 @@ sudo apt install nginx
 echo 'Moving nginx file...'
 # sudo cp filesToMoveUponInstallation/nginxWebcomic.conf /etc/nginx/nginx.conf
 sudo cp -f "$nginx_config_location" /etc/nginx/nginx.conf
-sudo
+
 
 sudo systemctl enable nginx
 sudo systemctl restart nginx

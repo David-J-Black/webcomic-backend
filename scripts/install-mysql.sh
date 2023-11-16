@@ -17,5 +17,5 @@ MYSQL_DATABASE="your_database"
 # sudo mysql -u "$MYSQL_USER" -p"$MYSQL_PASSWORD" -D "$MYSQL_DATABASE" -e "$MYSQL_COMMAND"
 
 sudo mysql
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'PeanutButter69!' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'backend'@'localhost' IDENTIFIED BY 'Password420!' WITH GRANT OPTION;
 FLUSH PRIVILEGES;

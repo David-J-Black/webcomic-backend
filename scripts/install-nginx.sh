@@ -4,7 +4,7 @@ script_location=$(dirname "$0")
 cd "$script_location/.." || Exit
 current_location=$(pwd)
 nginx_config_location="$current_location/filesToMoveUponInstallation/nginxWebcomic.conf"
-config_destination="/etc/nginx/nginx.conf"
+sconfig_destination="/etc/nginx/nginx.conf"
 
 echo "| Installing Nginx...|"
 

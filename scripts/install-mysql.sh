@@ -5,8 +5,6 @@ sudo apt-get install -y mysql-server
 
 # sudo mysql_secure_installation utility
 
-#!/bin/bash
-
 # MySQL connection parameters
 MYSQL_USER="root"
 MYSQL_PASSWORD="PeanutButter"
@@ -19,5 +17,5 @@ MYSQL_DATABASE="your_database"
 # sudo mysql -u "$MYSQL_USER" -p"$MYSQL_PASSWORD" -D "$MYSQL_DATABASE" -e "$MYSQL_COMMAND"
 
 sudo mysql
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'PeanutButter' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'PeanutButter69!' WITH GRANT OPTION;
 FLUSH PRIVILEGES;

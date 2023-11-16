@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 #setup script location
 script_directory=$(dirname "$0")

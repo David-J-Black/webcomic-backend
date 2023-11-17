@@ -1,12 +1,10 @@
 from datetime import datetime
-from typing import List, Dict
-
-from sqlalchemy.ext.hybrid import hybrid_property, hybrid_method
-
-from app import database
+from app import database, log
 
 
-class ComicPage(database.Model):
+# This is so much boiler plating! This fucking sucks!
+
+class ComicPageModel(database.Model):
     page_id = database.Column(database.Integer, primary_key=True)
     chapter_id = database.Column(database.Integer)
     page_number = database.Column(database.Integer)
@@ -23,7 +21,25 @@ class ComicPage(database.Model):
         return f'<Page: ChapterID{self.chapter_id}: Page Number;{self.page_number}>'
 
 
-class ComicChapter(database.Model):
+class ComicPage:
+    def __init__(self, model: ComicPageModel):
+        self.page_id = model.page_id
+        self.chapter_id = model.chapter_id
+        self.page_number = model.page_number
+        self.release_date = model.release_date
+        self.description = model.description
+        self.page_position = model.page_position
+        self.image_name = model.image_name
+        # image_data: bytes
+        self.status = model.status
+        self.created_at = model.created_at
+        self.updated_at = model.updated_at
+
+    def __repr__(self):
+        return f'<Page: ChapterID{self.chapter_id}: Page Number;{self.page_number}>'
+
+
+class ComicChapterModel(database.Model):
     """
     The bare minimum comic information stored in the comic_chapter row
     """
@@ -39,19 +55,30 @@ class ComicChapter(database.Model):
         return f'<Page: ChapterID{self.chapter_id}: Page Number;{self.page_number}>'
 
 
-class ComicChapterExtended:
+class ComicChapter:
+    """
+    The bare minimum comic information stored in the comic_chapter row
+    """
+    def __init__(self, model: ComicChapterModel):
+        self.chapter_id = model.chapter_id
+        self.chapter_number = model.chapter_number
+        self.title = model.title
+        self.release_date = model.release_date
+        self.description = model.description
+        self.created_at = model.created_at
+        self.updated_at = model.updated_at
+
+
+class ComicChapterCached:
     page_count: int
     start_page_number: int
     end_page_number: int
     pages: list[ComicPage]
-    previous_chapter: Dict[str, any] = None
-    next_chapter: Dict[str, any] = None
+    previous_chapter: dict[str, any] = None
+    next_chapter: dict[str, any] = None
 
     def __init__(self, comic_chapter: ComicChapter, pages: list[ComicPage]):
-        self.comic_chapter = comic_chapter
-        self.set_page_info(pages)
-
-    def set_page_info(self, pages: list[ComicPage]) -> None:
+        self.simple_chapter: ComicChapter = comic_chapter
         self.page_count = len(pages)
         if pages:
             self.start_page_number = pages[0].page_number
@@ -59,29 +86,29 @@ class ComicChapterExtended:
         else:
             self.start_page_number = 0
             self.end_page_number = 0
-        self.pages = pages
+        self.pages: list[ComicPage] = pages
 
     def connect_neighbors(self, previous_chapter, next_chapter):
         self.previous_chapter = previous_chapter
         self.next_chapter = next_chapter
 
-    def to_dto_no_neighbors(self) -> Dict[str, any]:
+    def to_dto_no_neighbors(self) -> dict[str, any]:
         return {
-            "number": self.comic_chapter.chapter_number,
-            "title": self.comic_chapter.title,
-            "releaseDate": self.comic_chapter.release_date,
-            "description": self.comic_chapter.description,
+            "number": self.simple_chapter.chapter_number,
+            "title": self.simple_chapter.title,
+            "releaseDate": self.simple_chapter.release_date,
+            "description": self.simple_chapter.description,
             "firstPage": self.start_page_number,
             "lastPage": self.end_page_number,
             "pageCount": len(self.pages)
         }
 
-    def to_dto(self) -> Dict[str, any]:
+    def to_dto(self) -> dict[str, any]:
         return {
-            "number": self.comic_chapter.chapter_number,
-            "title": self.comic_chapter.title,
-            "releaseDate": self.comic_chapter.release_date,
-            "description": self.comic_chapter.description,
+            "number": self.simple_chapter.chapter_number,
+            "title": self.simple_chapter.title,
+            "releaseDate": self.simple_chapter.release_date,
+            "description": self.simple_chapter.description,
             "firstPage": self.start_page_number,
             "lastPage": self.end_page_number,
             "previousChapter": self.previous_chapter,
@@ -90,18 +117,18 @@ class ComicChapterExtended:
         }
 
 
-class ComicPageExtended:
+class ComicPageCached:
     """
     This is how a comic page is stored in the cash
 
     TODO: Make a constructor for this that takes in page comments
     """
     def __init__(self, comic_page: ComicPage,
-                 comic_chapter: ComicChapterExtended):
-        self.comic_page = comic_page
-        self.comic_chapter = comic_chapter
+                 comic_chapter: ComicChapterCached):
+        self.comic_page: ComicPage = comic_page
+        self.comic_chapter: ComicChapterCached = comic_chapter
 
-    def to_dto(self) -> Dict[str, any]:
+    def to_dto(self) -> dict[str, any]:
         """
         When we send comic page info to the frontend,
         the dto is the simplified versoin with only the
@@ -114,3 +141,40 @@ class ComicPageExtended:
             "releaseDate": self.comic_page.release_date,
             "description": self.comic_page.description,
         }
+
+
+class TableOfContentsChapter:
+    """
+    The objects that make up the table of contents
+    """
+    def __init__(self, comic_chapter: ComicChapterCached):
+        self.chapter_number: int = comic_chapter.simple_chapter.chapter_number
+        self.pages: list[ComicPage] = comic_chapter.pages
+
+    def to_dto(self) -> dict[str, any]:
+        dto_pages: list[dict] = []
+        keys = self.pages
+        for page in self.pages:
+            dto_page = {
+                'pageNumber': page.page_number,
+                'releaseDate': page.release_date,
+                'description': page.description,
+            }
+            dto_pages.append(dto_page)
+
+        return {
+            'chapterNumber': self.chapter_number,
+            'pages:': dto_pages
+        }
+
+# self.page_id = model.page_id
+# self.chapter_id = model.chapter_id
+# self.page_number = model.page_number
+# self.release_date = model.release_date
+# self.description = model.description
+# self.page_position = model.page_position
+# self.image_name = model.image_name
+# # image_data: bytes
+# self.status = model.status
+# self.created_at = model.created_at
+# self.updated_at = model.updated_at

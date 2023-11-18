@@ -1,25 +1,26 @@
 import traceback
 from typing import Dict
-from flask import Blueprint, Flask, jsonify, request
-from app import log
-from models.ChapterComponents import ComicChapterCached, ComicPageCached, \
-    TableOfContentsChapter, ComicPage
-from repositorys.Repositories import Repository
-from services.Authentication import admin_secure
-from services.caches import ChapterCache
+from flask import Blueprint, jsonify, request
+from models import (
+    ComicChapterCached,
+    ComicPageCached,
+    TableOfContentsChapter,
+    ComicPage, SystemException
+)
+from repository.Repositories import Repository
+from service.Authentication import admin_secure
+from service.caches import ChapterCache
+from logger import log
 
 chapter_blueprint = Blueprint('chapter', __name__)
 
 
-class ChapterService(Blueprint):
+class ChapterService:
 
     def __init__(self,
-                 app: Flask,
                  chapter_repository: Repository,
                  chapter_cache: ChapterCache
                  ):
-        super().__init__('chapter', __name__)
-        app.register_blueprint(chapter_blueprint, url_prefix='/admin')
         self._chapter_repository = chapter_repository
         self._chapter_cache = chapter_cache
 
@@ -125,36 +126,23 @@ class ChapterService(Blueprint):
             log.warn(f'Error Trying to get all chapters: {traceback.format_exc()}')
             raise e
 
+    def get_page_id(self, chapter_number: int, page_number: int):
+        page: ComicPageCached = self._chapter_cache.get_comic_page(chapter_number, page_number)
 
-class AdminService(Blueprint):
+        if page is None:
+            log.warning(f'No page found for get_page_id(chapter_number:{chapter_number}, page_number: {page_number}')
+            return None
+
+        return page.comic_page.page_id
+
+
+class AdminService:
     """
     The thing in charge of all the admin functions
     """
 
-    def __init__(self, app: Flask):
-        super().__init__('admin', __name__)
-        self.register_routes()
-        app.register_blueprint(self, url_prefix='/admin')
+    def __init__(self):
         log.info('Initializing Admin Service')
-
-    def register_routes(self):
-        """
-        ==========================================
-        Initializes all the routes for the server
-        ==========================================
-        We need
-        - upload page
-        - delete page
-        - delete comment
-        - author comment
-
-        """
-        self.add_url_rule(
-            '/upload-one/<chapter_number>/<page_number>',
-            'upload_page',
-            self.upload_page,
-            methods=['POST', 'PUT']
-        )
 
     @admin_secure
     def upload_page(self, chapter_number: int, page_number: int):

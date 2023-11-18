@@ -1,58 +1,8 @@
-from datetime import datetime
-from app import database, log
+from models.models import ComicChapterModel
+from models.ComicPage import ComicPage
 
 
 # This is so much boiler plating! This fucking sucks!
-
-class ComicPageModel(database.Model):
-    page_id = database.Column(database.Integer, primary_key=True)
-    chapter_id = database.Column(database.Integer)
-    page_number = database.Column(database.Integer)
-    release_date = database.Column(database.Date, default=datetime.utcnow())
-    description = database.Column(database.String)
-    page_position = database.Column(database.String(1))
-    image_name = database.Column(database.String(30))
-    # image_data: bytes
-    status = database.Column(database.String(1))
-    created_at = database.Column(database.Date, default=datetime.utcnow())
-    updated_at = database.Column(database.Date, default=datetime.utcnow())
-
-    def __repr__(self):
-        return f'<Page: ChapterID{self.chapter_id}: Page Number;{self.page_number}>'
-
-
-class ComicPage:
-    def __init__(self, model: ComicPageModel):
-        self.page_id = model.page_id
-        self.chapter_id = model.chapter_id
-        self.page_number = model.page_number
-        self.release_date = model.release_date
-        self.description = model.description
-        self.page_position = model.page_position
-        self.image_name = model.image_name
-        # image_data: bytes
-        self.status = model.status
-        self.created_at = model.created_at
-        self.updated_at = model.updated_at
-
-    def __repr__(self):
-        return f'<Page: ChapterID{self.chapter_id}: Page Number;{self.page_number}>'
-
-
-class ComicChapterModel(database.Model):
-    """
-    The bare minimum comic information stored in the comic_chapter row
-    """
-    chapter_id = database.Column(database.Integer, primary_key=True)
-    chapter_number = database.Column(database.Integer)
-    title = database.Column(database.String)
-    release_date = database.Column(database.Date)
-    description = database.Column(database.String)
-    created_at = database.Column(database.Date)
-    updated_at = database.Column(database.Date)
-
-    def __repr__(self):
-        return f'<Page: ChapterID{self.chapter_id}: Page Number;{self.page_number}>'
 
 
 class ComicChapter:
@@ -117,32 +67,6 @@ class ComicChapterCached:
         }
 
 
-class ComicPageCached:
-    """
-    This is how a comic page is stored in the cash
-
-    TODO: Make a constructor for this that takes in page comments
-    """
-    def __init__(self, comic_page: ComicPage,
-                 comic_chapter: ComicChapterCached):
-        self.comic_page: ComicPage = comic_page
-        self.comic_chapter: ComicChapterCached = comic_chapter
-
-    def to_dto(self) -> dict[str, any]:
-        """
-        When we send comic page info to the frontend,
-        the dto is the simplified versoin with only the
-        stuff the frontend needs to know.
-        :return:
-        """
-        return {
-            "pageNumber": self.comic_page.page_number,
-            "chapter": self.comic_chapter.to_dto(),
-            "releaseDate": self.comic_page.release_date,
-            "description": self.comic_page.description,
-        }
-
-
 class TableOfContentsChapter:
     """
     The objects that make up the table of contents
@@ -166,7 +90,7 @@ class TableOfContentsChapter:
             'chapterNumber': self.chapter_number,
             'pages:': dto_pages
         }
-
+# ===== Elements of a page =====
 # self.page_id = model.page_id
 # self.chapter_id = model.chapter_id
 # self.page_number = model.page_number

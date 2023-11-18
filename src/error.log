@@ -65,12 +65,12 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap_external>", line 790, in exec_module
   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
   File "/home/bitnami/webcomic-backend/src/wsgi.py", line 5, in <module>
-    from services.Services import ChapterService
-  File "/home/bitnami/webcomic-backend/src/services/Services.py", line 5, in <module>
-    from services.caches import ChapterCache
-  File "/home/bitnami/webcomic-backend/src/services/caches.py", line 9, in <module>
+    from service.Services import ChapterService
+  File "/home/bitnami/webcomic-backend/src/service/Services.py", line 5, in <module>
+    from service.caches import ChapterCache
+  File "/home/bitnami/webcomic-backend/src/service/caches.py", line 9, in <module>
     class ChapterCache:
-  File "/home/bitnami/webcomic-backend/src/services/caches.py", line 82, in ChapterCache
+  File "/home/bitnami/webcomic-backend/src/service/caches.py", line 82, in ChapterCache
     def get_chapter_by_number(self, chapter_num) -> ComicChapterExtended | None:
 TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
 [2023-11-08 01:53:29 +0000] [14552] [ERROR] Exception in worker process
@@ -98,12 +98,12 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap_external>", line 790, in exec_module
   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
   File "/home/bitnami/webcomic-backend/src/wsgi.py", line 5, in <module>
-    from services.Services import ChapterService
-  File "/home/bitnami/webcomic-backend/src/services/Services.py", line 5, in <module>
-    from services.caches import ChapterCache
-  File "/home/bitnami/webcomic-backend/src/services/caches.py", line 9, in <module>
+    from service.Services import ChapterService
+  File "/home/bitnami/webcomic-backend/src/service/Services.py", line 5, in <module>
+    from service.caches import ChapterCache
+  File "/home/bitnami/webcomic-backend/src/service/caches.py", line 9, in <module>
     class ChapterCache:
-  File "/home/bitnami/webcomic-backend/src/services/caches.py", line 82, in ChapterCache
+  File "/home/bitnami/webcomic-backend/src/service/caches.py", line 82, in ChapterCache
     def get_chapter_by_number(self, chapter_num) -> ComicChapterExtended | None:
 TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
 [2023-11-08 01:53:29 +0000] [14551] [INFO] Worker exiting (pid: 14551)
@@ -192,9 +192,9 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
   File "/home/ubuntu/webcomic-backend/src/wsgi.py", line 10, in <module>
     chapter_cache: ChapterCache = ChapterCache(app, chapter_repository)
-  File "/home/ubuntu/webcomic-backend/src/services/caches.py", line 28, in __init__
+  File "/home/ubuntu/webcomic-backend/src/service/caches.py", line 28, in __init__
     self.load()
-  File "/home/ubuntu/webcomic-backend/src/services/caches.py", line 32, in load
+  File "/home/ubuntu/webcomic-backend/src/service/caches.py", line 32, in load
     chapters: list[ComicChapter] = self._repository.get_all_chapters()
   File "/home/ubuntu/webcomic-backend/src/repositorys/Repositories.py", line 41, in get_all_chapters
     comic_chapters: List[ComicChapter] = self.db.session.execute(query).fetchall()
@@ -334,9 +334,9 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
   File "/home/ubuntu/webcomic-backend/src/wsgi.py", line 10, in <module>
     chapter_cache: ChapterCache = ChapterCache(app, chapter_repository)
-  File "/home/ubuntu/webcomic-backend/src/services/caches.py", line 28, in __init__
+  File "/home/ubuntu/webcomic-backend/src/service/caches.py", line 28, in __init__
     self.load()
-  File "/home/ubuntu/webcomic-backend/src/services/caches.py", line 32, in load
+  File "/home/ubuntu/webcomic-backend/src/service/caches.py", line 32, in load
     chapters: list[ComicChapter] = self._repository.get_all_chapters()
   File "/home/ubuntu/webcomic-backend/src/repositorys/Repositories.py", line 41, in get_all_chapters
     comic_chapters: List[ComicChapter] = self.db.session.execute(query).fetchall()

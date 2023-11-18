@@ -1,9 +1,9 @@
 from typing import Dict
-
-from models.ChapterComponents import ComicChapterCached, ComicPageCached, \
-    ComicChapter, ComicPage
-from repositorys.Repositories import Repository
 from flask import Flask
+from logger import log
+from models import ComicChapterCached, ComicPageCached, ComicChapter, ComicPage
+from repository.Repositories import Repository
+from services import chapter_repository
 
 
 class ChapterCache:
@@ -20,19 +20,20 @@ class ChapterCache:
 
     _comic_page_cache: Dict[int, Dict[int, ComicPageCached]] = {}
 
-    def __init__(self,
-                 app: Flask,
-                 repository: Repository):
-        self._app = app
-        self._repository = repository
-        self.load()
+    # We need the app object to load stuff
+    _app: Flask
 
-    def load(self):
+    def __init__(self):
+
+    def load(self, app: Flask = None):
+        if app is not None:
+            self._app = app
+
         with self._app.app_context():
-            chapters: list[ComicChapter] = self._repository.get_all_chapters()
+            chapters: list[ComicChapter] = chapter_repository.get_all_chapters()
 
             for chapter in chapters:
-                pages: list[ComicPage] = self._repository.get_all_chapter_pages_wo_image(chapter_id=chapter.chapter_id)
+                pages: list[ComicPage] = chapter_repository.get_all_chapter_pages_wo_image(chapter_id=chapter.chapter_id)
                 extended_chapter = ComicChapterCached(chapter, pages)
 
                 self._chapter_cache_by_number[chapter.chapter_number] = extended_chapter
@@ -52,8 +53,8 @@ class ChapterCache:
                               f"page:{page.page_number}]")
                     else:
 
-                        print(f'About to load page [ch: {chapter.chapter_number}, pg: {page.page_number}]', end='\t')
-                        comic_page_cache_chapter[page.page_number] = ComicPageCached(page, extended_chapter)
+                        log.debug(f'About to load page [ch: {chapter.chapter_number}, pg: {page.page_number}]')
+                        comic_page_cache_chapter[page.page_number] = ComicPageCached(page, extended_chapter.to_dto())
 
             # Ok time to connect chapters
             for chapter in chapters:
@@ -91,15 +92,20 @@ class ChapterCache:
         else:
             return None
 
-# TODO: Have this return a number for number of items loaded
+# TODO: Have this return a number of items loaded
     def refresh(self) -> None:
         self.load()
 
-    def get_comic_page(self, chapter_number, page_number) -> ComicPageCached:
+    def get_comic_page(self, chapter_number, page_number) -> ComicPageCached | None:
         if chapter_number is None or page_number is None:
-            print(f'Invalid information for retrieving comic page from cache! [ch:{chapter_number},pg:{page_number}]')
+            log.warning(f'Invalid information for retrieving comic page from cache! [ch:{chapter_number},pg:{page_number}]')
 
-        return self._comic_page_cache[chapter_number][page_number]
+        chapter_pages = self._comic_page_cache.get(chapter_number)
+
+        if chapter_pages is None:
+            return None
+
+        return chapter_pages.get(page_number)
 
     def get_first_chapter(self) -> ComicChapterCached | None:
         """

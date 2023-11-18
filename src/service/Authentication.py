@@ -1,9 +1,10 @@
 from functools import wraps
-from app import webcomic_config, log
 import flask
 from flask import jsonify, request
 import bcrypt
+from logger import log
 
+import config
 
 
 def is_public_authenticated():
@@ -27,11 +28,12 @@ def is_admin_authenticated():
 
     # encode included token and see if we have a match...
     password_bytes = auth.encode('utf-8')
-    stored_pass = webcomic_config.admin_pass_hashed.encode('utf-8')
+    stored_pass = config.admin_pass_hashed.encode('utf-8')
     match: bool = bcrypt.checkpw(password_bytes, stored_pass)
 
     if not match:
         return jsonify({'message': "Ah ah ah, you didn\'t say the magic word!"}), 403
+
 
 def secure_route(route_function):
     @wraps(route_function)

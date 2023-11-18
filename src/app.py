@@ -1,28 +1,23 @@
-import logging
-import sys
-
-from flask_sqlalchemy import SQLAlchemy
+import config
 from flask import Flask
 from flask_cors import CORS
+from logger import log, setup_logger
+from database import database
+from endpoints import comment_blueprint
+from services import chapter_cache
 
-from config import Config
+setup_logger()
+log.info('Starting App...')
 
 app = Flask(__name__)
-webcomic_config: Config = Config()
-
-# ============================================================
-# Initialize logger
-# ============================================================
-
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    filename=webcomic_config.log_location,
-                    filemode='a') # Append to log file, don't overwrite
-handler = logging.StreamHandler(sys.stdout)
-log = logging.getLogger('webcomicLogger')
-log.addHandler(handler)
-
-app.config['SQLALCHEMY_DATABASE_URI'] = webcomic_config.database_path
-database = SQLAlchemy()
+app.config['SQLALCHEMY_DATABASE_URI'] = config.database_path
 database.init_app(app)
+chapter_cache.load(app)
+
+# Initialize CORS
 CORS(app)
+
+# -- Initialize endpoints --
+app.register_blueprint(comment_blueprint)
+
+

@@ -1,3 +1,8 @@
-from .Services import ChapterService, AdminService
+from .ChapterService import ChapterService
 from .CommentService import CommentService
-from .caches import ChapterCache
+from .Authentication import admin_secure
+from .PageService import PageService
+
+chapter_service = ChapterService()
+page_service = PageService()
+comment_service = CommentService()

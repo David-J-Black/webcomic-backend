@@ -1,5 +1,6 @@
 from sqlalchemy import Date
 from models import ComicPageModel, CommentModel
+import uuid
 
 
 class ComicPage:
@@ -29,6 +30,10 @@ class Comment:
         self.status = model.status
         self.create_dt = model.create_dt
         self.update_dt = model.create_dt
+    #
+    # def __init__(self, request: dict):
+    #     self.comment_guid = uuid.uuid4()
+
 
     def to_dto(self) -> dict[str, any]:
         return {

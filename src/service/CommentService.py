@@ -1,15 +1,10 @@
 from logger import log
-from models import Pagination, Comment
-from service import ChapterService
+from models import Pagination, Comment, SystemException, SystemCode
+import service
 import repository
 
 
 class CommentService:
-
-    def __init__(self,
-                 chapter_service: ChapterService
-                 ):
-        self._chapter_service = chapter_service
 
     def get_comments(self,
                      chapter_number: int,
@@ -17,7 +12,7 @@ class CommentService:
                      pagination: Pagination
                      ) -> list[dict]:
         # Get the page id
-        page_id: int = self._chapter_service.get_page_id(chapter_number, page_number)
+        page_id: int = service.chapter_service.get_page_id(chapter_number, page_number)
         comments: list[Comment] = repository.comment_repository.get_page_comments(page_id, pagination)
 
         # Time to serialize the comments in a more friendly way for the frontend
@@ -32,3 +27,14 @@ class CommentService:
                       page_number: int,
                       comment_body: dict ):
         log.info(f'Going to post comment')
+
+        chapter = service.chapter_service.get_chapter_extended(chapter_number)
+
+        if chapter is None:
+            raise SystemException('This isn\'t a fucking chapter!', SystemCode.INVALID_DATA.value() )
+
+        page = service.page_service.get_comic_page(chapter_number, page_number)
+
+        if page is None:
+            raise SystemException('This isn\'t a fucking chapter!', SystemCode.INVALID_DATA.value() )
+

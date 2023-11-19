@@ -1,5 +1,4 @@
 from typing import Dict
-from flask import Flask
 from logger import log
 from models import ComicChapterCached, ComicPageCached, ComicChapter, ComicPage
 from repository import chapter_repository
@@ -20,9 +19,9 @@ class ChapterCache:
     _comic_page_cache: Dict[int, Dict[int, ComicPageCached]] = {}
 
     # We need the app object to load stuff
-    _app: Flask
+    _app: any
 
-    def load(self, app: Flask = None):
+    def load(self, app=None):
         if app is not None:
             self._app = app
 

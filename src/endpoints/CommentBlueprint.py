@@ -24,7 +24,7 @@ def get_comments(chapter_number: int, page_number: int):
         response.headers['Content-Type'] = 'application/json'
         return response
     except SystemException as se:
-        return jsonify({'message': 'Problem getting comments...'}), se.code.value
+        return jsonify({'message': str(se)}), se.code.value
     except Exception as e:
         log.warning(f'Ran into a problem trying to get comments!'
                     f'[chapter_number: {chapter_number}, page_number: {page_number}]', exc_info=e)

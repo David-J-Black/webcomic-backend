@@ -1,3 +1,5 @@
+from sqlalchemy import Row
+
 from models import CommentModel
 
 
@@ -7,12 +9,12 @@ class Comment:
     """
 
     def __init__(self, model: CommentModel | dict[str, any]):
-        if isinstance(model, CommentModel):
+        if isinstance(model, Row):
             self.comment_id = model.comment_id
             self.comment_guid = model.comment_guid
             self.page_id = model.page_id
             self.body = model.body
-            self.owner = model.owner
+            self.author = model.author
             self.status = model.status
             self.create_dt = model.create_dt
             self.update_dt = model.create_dt
@@ -30,7 +32,7 @@ class Comment:
         return {
             "commentGuid": self.comment_guid,
             "body": self.body,
-            "author": self.owner,
+            "author": self.author,
             "createDt": self.create_dt
         }
 

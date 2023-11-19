@@ -18,16 +18,21 @@ class CommentService:
                      page_number: int,
                      pagination: Pagination
                      ) -> list[dict]:
-        # Get the page id
-        page_id: int = service.chapter_service.get_page_id(chapter_number, page_number)
-        comments: list[CommentModel] = repository.comment_repository.get_page_comments(page_id, pagination)
+        try:
+            # Get the page id
+            page_id: int = service.chapter_service.get_page_id(chapter_number, page_number)
+            comments: list[Comment] = repository.comment_repository.get_page_comments(page_id, pagination)
 
-        # Time to serialize the comments in a more friendly way for the frontend
-        response = []
+            # Time to serialize the comments in a more friendly way for the frontend
+            response: list[dict] = []
 
-        for comment in comments:
-            response.append(comment.to_dto())
-        return response
+            for comment in comments:
+                response.append(comment.to_dto())
+            return response
+        except Exception as e:
+            log.error(f'There was a problem trying to get comments for page'
+                      f'[ch#:{chapter_number}, pg#:{page_number}, pagination:{pagination}]')
+            raise e
 
     def post_comment(self,
                      chapter_number: int,
@@ -55,6 +60,7 @@ class CommentService:
             comment = Comment(comment_request)
             comment.comment_guid = str(uuid.uuid4())
             comment.page_id = page.comic_page.page_id
+            comment.status = 'A'
 
             # TODO: Check comment for shitty language...
 

@@ -36,6 +36,7 @@ class CommentModel(database.Model):
         return f'<Comment: comment_id{self.comment_id}: Page ID;{self.page_id}>'
 
 
+
 class ComicChapterModel(database.Model):
     """
     The bare minimum comic information stored in the comic_chapter row

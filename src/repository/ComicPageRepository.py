@@ -8,7 +8,7 @@ from sqlalchemy import text, TextClause
 from models.ComicPage import ComicPageModel
 
 
-class Repository:
+class ComicPageRepository:
 
     def __init__(self, database: SQLAlchemy):
         self.db = database

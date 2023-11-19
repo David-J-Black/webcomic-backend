@@ -1,7 +1,7 @@
 from typing import Dict
 from logger import log
 from models import ComicChapterCached, ComicPageCached, ComicChapter, ComicPage
-from repository import chapter_repository
+from repository import chapter_repository, page_repository
 
 
 class ChapterCache:
@@ -29,7 +29,7 @@ class ChapterCache:
             chapters: list[ComicChapter] = chapter_repository.get_all_chapters()
 
             for chapter in chapters:
-                pages: list[ComicPage] = chapter_repository.get_all_chapter_pages_wo_image(chapter_id=chapter.chapter_id)
+                pages: list[ComicPage] = page_repository.get_all_chapter_pages_wo_image(chapter_id=chapter.chapter_id)
                 extended_chapter = ComicChapterCached(chapter, pages)
 
                 self._chapter_cache_by_number[chapter.chapter_number] = extended_chapter

@@ -1,7 +1,8 @@
 from database import database
-from .Repositories import Repository
-from .commentRepository import CommentRepository
+from .ComicChapterRepository import ComicChapterRepository
+from .ComicPageRepository import ComicPageRepository
+from .CommentRepository import CommentRepository
 
-
-chapter_repository = Repository(database)
+page_repository = ComicPageRepository(database)
+chapter_repository = ComicChapterRepository(database)
 comment_repository = CommentRepository(database)

@@ -1,6 +1,5 @@
 from sqlalchemy import Date
-from models import ComicPageModel, CommentModel
-import uuid
+from models import ComicPageModel
 
 
 class ComicPage:
@@ -15,33 +14,6 @@ class ComicPage:
         self.status = model.status
         self.create_dt = Date
         self.update_dt = Date
-
-
-class Comment:
-    """
-    The things people leave on pages to hurt me
-    """
-    def __init__(self, model: CommentModel):
-        self.comment_id = model.comment_id
-        self.comment_guid = model.comment_guid
-        self.page_id = model.page_id
-        self.body = model.body
-        self.owner = model.owner
-        self.status = model.status
-        self.create_dt = model.create_dt
-        self.update_dt = model.create_dt
-    #
-    # def __init__(self, request: dict):
-    #     self.comment_guid = uuid.uuid4()
-
-
-    def to_dto(self) -> dict[str, any]:
-        return {
-            "comment_guid": self.comment_guid,
-            "body": self.body,
-            "author": self.owner,
-            "create_dt": self.create_dt
-        }
 
 
 class ComicPageCached:

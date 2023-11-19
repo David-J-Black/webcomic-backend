@@ -1,7 +1,4 @@
 from datetime import datetime
-
-from sqlalchemy import Date
-
 from database import database
 
 
@@ -26,15 +23,15 @@ class ComicPageModel(database.Model):
 
 
 class CommentModel(database.Model):
-    comment_id = database.Column(database.Integer)
+    __tablename__ = "comment"
+    comment_id = database.Column(database.Integer, primary_key=True)
     comment_guid = database.Column(database.String(40))
-    page_id = database.Column(database.Integer, primary_key=True)
+    page_id = database.Column(database.Integer)
     body = database.Column(database.String)
-    owner = database.Column(database.String)
+    author = database.Column(database.String)
     status = database.Column(database.String(1))
-    create_dt: Date = database.Column(database.Date, default=datetime.utcnow())
-    update_dt: Date = database.Column(database.Date, default=datetime.utcnow())
-
+    create_dt = database.Column(database.Date, default=datetime.utcnow())
+    update_dt = database.Column(database.Date, default=datetime.utcnow())
     def __repr__(self):
         return f'<Comment: comment_id{self.comment_id}: Page ID;{self.page_id}>'
 
@@ -53,3 +50,5 @@ class ComicChapterModel(database.Model):
 
     def __repr__(self):
         return f'<Page: ChapterID{self.chapter_id}: Page Number;{self.page_number}>'
+
+

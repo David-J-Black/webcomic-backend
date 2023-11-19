@@ -1,1 +1,2 @@
 from endpoints.CommentEndpoints import comment_blueprint
+from endpoints.chapterBlueprint import chapter_blueprint

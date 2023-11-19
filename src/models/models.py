@@ -2,7 +2,7 @@ from datetime import datetime
 
 from sqlalchemy import Date
 
-from app import database
+from database import database
 
 
 class ComicPageModel(database.Model):

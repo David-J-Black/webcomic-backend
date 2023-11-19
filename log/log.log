@@ -5950,3 +5950,900 @@ WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 986-346-662
 INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/service/caches.py', reloading
 INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6901
+ * Running on http://192.168.254.29:6901
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:webcomicLogger:Request to get comments
+WARNING:webcomicLogger:Ran into a problem trying to get comments![chapter_number: 1, page_number: 1]
+Traceback (most recent call last):
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/endpoints/CommentEndpoints.py", line 23, in get_comments
+    comments: list[dict] = comment_service.get_comments(chapter_number, page_number, pagination)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/service/CommentService.py", line 21, in get_comments
+    comments: list[Comment] = repository.comment.get_page_comments(page_id, pagination)
+                              ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'repository' has no attribute 'comment'
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 16:53:43] "[35m[1mGET /comment/1/1?pageSize=1&pageNumber=0 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/service/CommentService.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:webcomicLogger:Request to get comments
+WARNING:webcomicLogger:Ran into a problem trying to get comments![chapter_number: 1, page_number: 1]
+Traceback (most recent call last):
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/endpoints/CommentEndpoints.py", line 23, in get_comments
+    comments: list[dict] = comment_service.get_comments(chapter_number, page_number, pagination)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/service/CommentService.py", line 21, in get_comments
+    comments: list[Comment] = repository.comment_repository.get_page_comments(page_id, pagination)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CommentRepository.get_page_comments() missing 1 required positional argument: 'page_of_comments'
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 16:54:44] "[35m[1mGET /comment/1/1?pageSize=1&pageNumber=0 HTTP/1.1[0m" 500 -
+INFO:webcomicLogger:Request to get comments
+WARNING:webcomicLogger:Ran into a problem trying to get comments![chapter_number: 1, page_number: 1]
+Traceback (most recent call last):
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/endpoints/CommentEndpoints.py", line 23, in get_comments
+    comments: list[dict] = comment_service.get_comments(chapter_number, page_number, pagination)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/service/CommentService.py", line 21, in get_comments
+    comments: list[Comment] = repository.comment_repository.get_page_comments(page_id, pagination)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CommentRepository.get_page_comments() missing 1 required positional argument: 'page_of_comments'
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 16:54:45] "[35m[1mGET /comment/1/1?pageSize=1&pageNumber=0 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/repository/commentRepository.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:webcomicLogger:Request to get comments
+WARNING:webcomicLogger:Ran into a problem trying to get comments![chapter_number: 1, page_number: 1]
+Traceback (most recent call last):
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/endpoints/CommentEndpoints.py", line 23, in get_comments
+    comments: list[dict] = comment_service.get_comments(chapter_number, page_number, pagination)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/service/CommentService.py", line 21, in get_comments
+    comments: list[Comment] = repository.comment_repository.get_page_comments(page_id, pagination)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CommentRepository.get_page_comments() missing 1 required positional argument: 'page_of_comments'
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 16:55:24] "[35m[1mGET /comment/1/1?pageSize=1&pageNumber=0 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/repository/commentRepository.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/repository/commentRepository.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:webcomicLogger:Request to get comments
+WARNING:webcomicLogger:Ran into a problem trying to get comments![chapter_number: 1, page_number: 1]
+Traceback (most recent call last):
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/endpoints/CommentEndpoints.py", line 23, in get_comments
+    comments: list[dict] = comment_service.get_comments(chapter_number, page_number, pagination)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/service/CommentService.py", line 21, in get_comments
+    comments: list[Comment] = repository.comment_repository.get_page_comments(page_id, pagination)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CommentRepository.get_page_comments() missing 1 required positional argument: 'pagination'
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 16:56:15] "[35m[1mGET /comment/1/1?pageSize=1&pageNumber=0 HTTP/1.1[0m" 500 -
+INFO:webcomicLogger:Request to get comments
+WARNING:webcomicLogger:Ran into a problem trying to get comments![chapter_number: 1, page_number: 1]
+Traceback (most recent call last):
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/endpoints/CommentEndpoints.py", line 23, in get_comments
+    comments: list[dict] = comment_service.get_comments(chapter_number, page_number, pagination)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/service/CommentService.py", line 21, in get_comments
+    comments: list[Comment] = repository.comment_repository.get_page_comments(page_id, pagination)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CommentRepository.get_page_comments() missing 1 required positional argument: 'pagination'
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 16:56:16] "[35m[1mGET /comment/1/1?pageSize=1&pageNumber=0 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/repository/commentRepository.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:webcomicLogger:Request to get comments
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 16:56:39] "GET /comment/1/1?pageSize=1&pageNumber=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/repository/commentRepository.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/repository/commentRepository.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/repository/commentRepository.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:06:27] "[33mOPTIONS /chapter/all HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:06:30] "[33mOPTIONS /chapter/all HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/endpoints/chapterBlueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:07:13] "[33mOPTIONS /chapter/all HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:07:15] "[33mOPTIONS /pages/first HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:07:17] "[33mOPTIONS /chapter/all HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:07:24] "[33mOPTIONS /chapter/1 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:07:33] "[33mOPTIONS /chapter/1 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:39] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:39] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:39] "GET /page/1/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:39] "GET /page/1/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:39] "GET /page/1/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:39] "GET /page/1/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:39] "GET /page/1/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:39] "GET /page/1/6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:39] "GET /page/1/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:39] "GET /page/1/7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:41] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:43] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "OPTIONS /pages/first HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "GET /pages/first HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "GET /page/1/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "GET /page/1/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "GET /page/1/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "GET /page/1/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "GET /page/1/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "GET /page/1/6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "GET /page/1/7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:49] "GET /page/1/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:51] "GET /page/1/12 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:51] "GET /page/1/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:51] "GET /page/1/9 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:52] "GET /page/1/11 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:52] "GET /page/1/13 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:52] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:52] "GET /page/1/14 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:52] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:52] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:52] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:09:52] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "GET /page/1/19 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "GET /page/1/14 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "GET /page/1/20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "GET /page/1/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:10:53] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "GET /page/1/14 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "GET /page/1/19 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "GET /page/1/20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:10] "GET /page/1/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:12] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:12] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:12] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:12] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:12] "GET /page/1/14 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:12] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:12] "GET /page/1/19 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:12] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:12] "GET /page/1/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:11:12] "GET /page/1/20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:20] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:20] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:20] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:20] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:20] "GET /page/1/14 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:20] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:20] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:21] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:21] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:21] "GET /page/1/19 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:21] "GET /page/1/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:21] "GET /page/1/20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "GET /page/1/14 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "GET /page/1/19 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "GET /page/1/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:37] "GET /page/1/20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "GET /page/1/14 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "GET /page/1/19 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "GET /page/1/20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:12:47] "GET /page/1/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "GET /page/1/14 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "GET /page/1/19 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "GET /page/1/20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:03] "GET /page/1/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "GET /page/1/14 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "GET /page/1/19 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "GET /page/1/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:13:08] "GET /page/1/20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /page/2/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /page/2/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /page/2/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /page/2/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /page/2/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /page/2/6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /page/2/7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /page/2/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /page/2/11 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /page/2/9 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /page/2/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "OPTIONS /chapter/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:31] "GET /chapter/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:32] "GET /page/2/12 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:15:32] "GET /page/2/13 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:17:17] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:17:17] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/endpoints/chapterBlueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:20] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:20] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:20] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:21] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:21] "GET /page/1/19 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:21] "GET /page/1/14 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:21] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:21] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:21] "GET /page/1/20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:21] "GET /page/1/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:21] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:22:22] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:34] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:34] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:34] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:34] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:35] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:35] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:35] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:35] "GET /page/1/19 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:35] "GET /page/1/20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:35] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:35] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:35] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:35] "GET /page/1/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:35] "GET /page/2/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:35] "GET /page/2/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:36] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:36] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:49] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:49] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:49] "GET /page/1/16 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:49] "GET /page/1/15 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:49] "GET /page/1/17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:49] "GET /page/1/18 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:49] "GET /page/1/19 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:49] "GET /page/1/20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:49] "GET /page/2/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:49] "GET /page/1/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:49] "GET /page/2/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:50] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:23:50] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:11] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:11] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:11] "GET /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:11] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:13] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:13] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:21] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:21] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:21] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:21] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:31] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:31] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:31] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:24:31] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:09] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:09] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:09] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:09] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:11] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:11] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:50] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:50] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:50] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:50] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:51] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:26:51] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:07] "OPTIONS /pages/last HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:07] "GET /pages/last HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "OPTIONS /chapter/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /chapter/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /page/2/13 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "OPTIONS /pages/first HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /pages/first HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "OPTIONS /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /chapter/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /page/1/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /page/1/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /page/1/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /page/1/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /page/1/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /page/1/6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /page/1/7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:08] "GET /page/1/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:11] "OPTIONS /chapter/all HTTP/1.1" 200 -
+INFO:webcomicLogger:Request to get all chapters
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2023 17:27:11] "GET /chapter/all HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/davidblack/Projects/webcomic-website-template/webcomic-backend/src/repository/Repositories.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:webcomicLogger:Starting App...
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 13]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 14]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 15]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 16]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 17]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 18]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 19]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 20]
+DEBUG:webcomicLogger:About to load page [ch: 1, pg: 21]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 1]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 2]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 3]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 4]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 5]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 6]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 7]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 8]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 9]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 10]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 11]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 12]
+DEBUG:webcomicLogger:About to load page [ch: 2, pg: 13]
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 986-346-662

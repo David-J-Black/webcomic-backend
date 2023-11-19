@@ -1,6 +1,8 @@
 import config
 from flask import Flask
 from flask_cors import CORS
+
+from endpoints import chapter_blueprint
 from logger import log, setup_logger
 from database import database
 from endpoints import comment_blueprint
@@ -19,5 +21,6 @@ CORS(app)
 
 # -- Initialize endpoints --
 app.register_blueprint(comment_blueprint)
+app.register_blueprint(chapter_blueprint)
 
 

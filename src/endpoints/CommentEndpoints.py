@@ -1,5 +1,5 @@
-from flask import Blueprint, jsonify, request, make_response, Response
-from models import Comment, Pagination
+from flask import Blueprint, jsonify, request, make_response
+from models import Pagination
 from services import comment_service
 from logger import log
 from models import SystemException
@@ -31,6 +31,7 @@ def get_comments(chapter_number: int, page_number: int):
         log.warning(f'Ran into a problem trying to get comments!'
                     f'[chapter_number: {chapter_number}, page_number: {page_number}]', exc_info=e)
         return jsonify({'message': 'Problem getting comments'}), 500
+
 
 @comment_blueprint.route('/<int:chapter_number>/<int:page_number>',methods=['POST'])
 def post_comment(chapter_number: int, page_number):

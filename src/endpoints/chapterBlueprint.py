@@ -1,14 +1,13 @@
 import traceback
 
-from flask import Blueprint, Response, jsonify, Flask
+from flask import Blueprint, Response, jsonify, make_response
 
-from models import ComicPageCached
+from models import ComicPageCached, SystemException
 from service.Authentication import secure_route
 from services import chapter_service, chapter_cache
 from logger import log
 
 chapter_blueprint = Blueprint('chapter', __name__)
-
 
 
 @chapter_blueprint.route('/page/<int:chapter_number>/<int:page_number>', methods=['GET'])
@@ -78,6 +77,9 @@ def get_all_chapters():
         all_chapters = chapter_service.get_table_of_contents()
         return jsonify(all_chapters), 200
 
+    except SystemException as se:
+        return make_response('Ran into an issue, sorry babe', se.code)
+
     except Exception as e:
-        log.warning(f'Could not make response to getting all chapers! {traceback.format_exc()}')
-        return Flask.make_response('Ooops!', 500)
+        log.warning(f'Could not make response to getting all chapers!{e}:{traceback.format_exc()}')
+        return make_response('Ooops!', 500)

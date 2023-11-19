@@ -2,8 +2,7 @@ from typing import Dict
 from flask import Flask
 from logger import log
 from models import ComicChapterCached, ComicPageCached, ComicChapter, ComicPage
-from repository.Repositories import Repository
-from services import chapter_repository
+from repository import chapter_repository
 
 
 class ChapterCache:
@@ -22,8 +21,6 @@ class ChapterCache:
 
     # We need the app object to load stuff
     _app: Flask
-
-    def __init__(self):
 
     def load(self, app: Flask = None):
         if app is not None:

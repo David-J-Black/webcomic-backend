@@ -10,5 +10,5 @@ class SystemCode(Enum):
 class SystemException(Exception):
 
     def __init(self, message: str, code: SystemCode):
-        super().__init__(str)
+        super(message)
         self.code = code

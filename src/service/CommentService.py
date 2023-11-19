@@ -1,6 +1,7 @@
+from logger import log
 from models import Pagination, Comment
 from service import ChapterService
-from repository import CommentRepository
+import repository
 
 
 class CommentService:
@@ -17,7 +18,7 @@ class CommentService:
                      ) -> list[dict]:
         # Get the page id
         page_id: int = self._chapter_service.get_page_id(chapter_number, page_number)
-        comments: list[Comment] = CommentRepository.get_page_comments(page_id, pagination)
+        comments: list[Comment] = repository.comment_repository.get_page_comments(page_id, pagination)
 
         # Time to serialize the comments in a more friendly way for the frontend
         response = []
@@ -25,3 +26,9 @@ class CommentService:
         for comment in comments:
             response.append(comment.to_dto())
         return response
+
+    def post_comments(selfself,
+                      chapter_number: int,
+                      page_number: int,
+                      comment_body: dict ):
+        log.info(f'Going to post comment')

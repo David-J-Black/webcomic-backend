@@ -1,10 +1,11 @@
 from typing import List
-from logger import log
+
 from flask_sqlalchemy import SQLAlchemy
+
+from logger import log
 from models.ChapterComponents import ComicChapterModel, ComicPage
 from sqlalchemy import text, TextClause
-from models.ComicPage import ComicPageModel, CommentModel, Comment
-
+from models.ComicPage import ComicPageModel
 
 
 class Repository:
@@ -59,12 +60,3 @@ class Repository:
 
         return response
 
-    def get_page_comments(self, page_id: int, per_page: int, page_of_comments: int) -> list[Comment]:
-        query = text("select * from comment where status='A' and page_id=:page_id"
-                     "order by create_dt limit :page_size offset :offset")
-        variables = {"page_id": page_id, "page_size": per_page, "offset": per_page * page_of_comments}
-        comment_page: list[CommentModel] = self.db.session.execute(query, variables).fetchall()
-        response: list[Comment] = []
-        for comment in comment_page:
-            response.append(Comment(comment))
-        return response

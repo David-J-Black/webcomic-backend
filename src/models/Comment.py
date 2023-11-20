@@ -1,20 +1,22 @@
 from sqlalchemy import Row
 
 from models import CommentModel
+from models.Serializable import Serializable
 
 
-class Comment:
+class Comment(Serializable):
     """
     Something a reader has said on the comic
     """
 
     def __init__(self, model: CommentModel | dict[str, any]):
-        if isinstance(model, Row):
+        if isinstance(model, CommentModel | Row):
             self.comment_id = model.comment_id
             self.comment_guid = model.comment_guid
             self.page_id = model.page_id
             self.body = model.body
             self.author = model.author
+            self.author_ip = model.author_ip
             self.status = model.status
             self.create_dt = model.create_dt
             self.update_dt = model.create_dt
@@ -24,6 +26,7 @@ class Comment:
             self.page_id = model.get('pageId')
             self.body = model.get('body')
             self.author = model.get('author')
+            self.author_ip = model.get('authorIp')
             self.status = model.get('status')
             self.create_dt = model.get('createDt')
             self.update_dt = model.get('createDt')
@@ -43,6 +46,7 @@ class Comment:
         model.page_id = self.page_id
         model.body = self.body
         model.author = self.author
+        model.author_ip = self.author_ip
         model.status = self.status
         model.create_dt = self.create_dt
         model.update_dt = self.update_dt

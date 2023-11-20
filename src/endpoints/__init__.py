@@ -1,3 +1,3 @@
-from .CommentBlueprint import comment_blueprint
-from .chapterBlueprint import chapter_blueprint
-from .PageBlueprint import comic_page_blueprint
+from .comment_endpoints import comment_endpoints
+from .chapter_endpoints import chapter_endpoints
+from .comic_page_endpoints import comic_page_endpoints

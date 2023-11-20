@@ -3,6 +3,7 @@ from models import ComicPageModel
 
 
 class ComicPage:
+    chapter_number: int
     def __init__(self, model: ComicPageModel):
         self.page_id = model.page_id
         self.chapter_id = model.chapter_id
@@ -36,6 +37,7 @@ class ComicPageCached:
         """
         return {
             "pageNumber": self.comic_page.page_number,
+            "chapterNumber": self.comic_page.chapter_number,
             "chapter": self.comic_chapter,
             "releaseDate": self.comic_page.release_date,
             "description": self.comic_page.description,

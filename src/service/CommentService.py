@@ -5,7 +5,19 @@ from models import Pagination, CommentModel, SystemException, SystemCode
 from models.Comment import Comment
 from repository import comment_repository
 import service
-import repository
+
+def _check_comment_auth(response: dict):
+    """
+    I think users should have to answer a dumb question
+    :param response:
+    :return:
+    """
+    question_response_key = 'answer'
+    question = 'What kind of animal is Darwin?'
+    correct_answer = 'dog'
+    response: str = response.get(question_response_key)
+    if correct_answer.lower() != response.lower():
+        raise SystemException('What... have you only read five pages?', 403)
 
 
 class CommentService:
@@ -21,7 +33,11 @@ class CommentService:
         try:
             # Get the page id
             page_id: int = service.chapter_service.get_page_id(chapter_number, page_number)
-            comments: list[Comment] = repository.comment_repository.get_page_comments(page_id, pagination)
+
+            # Me being persnickitty and insisting I give everything types
+            comments: list[Comment]
+            total_comments: int
+            comments, total_comments = comment_repository.get_page_comments(page_id, pagination)
 
             # Time to serialize the comments in a more friendly way for the frontend
             response: list[dict] = []
@@ -29,6 +45,8 @@ class CommentService:
             for comment in comments:
                 response.append(comment.to_dto())
             return response
+        except SystemException as e:
+            raise e
         except Exception as e:
             log.error(f'There was a problem trying to get comments for page'
                       f'[ch#:{chapter_number}, pg#:{page_number}, pagination:{pagination}]')
@@ -56,6 +74,8 @@ class CommentService:
 
             if page is None:
                 raise SystemException('This isn\'t a fucking chapter!', SystemCode.INVALID_DATA.value() )
+
+            _check_comment_auth(comment_request)
 
             comment = Comment(comment_request)
             comment.comment_guid = str(uuid.uuid4())

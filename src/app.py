@@ -2,7 +2,7 @@ import config
 from flask import Flask
 from flask_cors import CORS
 
-from endpoints import chapter_blueprint, comic_page_blueprint, comment_blueprint
+from endpoints import chapter_endpoints, comic_page_endpoints, comment_endpoints
 from logger import log, setup_logger
 from database import database
 from cache import chapter_cache
@@ -19,8 +19,8 @@ chapter_cache.load(app)
 CORS(app)
 
 # -- Initialize endpoints --
-app.register_blueprint(comment_blueprint)
-app.register_blueprint(chapter_blueprint)
-app.register_blueprint(comic_page_blueprint)
+app.register_blueprint(comment_endpoints)
+app.register_blueprint(chapter_endpoints)
+app.register_blueprint(comic_page_endpoints)
 
 

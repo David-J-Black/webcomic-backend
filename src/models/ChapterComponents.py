@@ -36,6 +36,11 @@ class ComicChapterCached:
         else:
             self.start_page_number = 0
             self.end_page_number = 0
+
+        # Set the chapter number in the pages (pages are raw from DB usually!
+        for page in pages:
+            page.chapter_number = self.simple_chapter.chapter_number
+
         self.pages: list[ComicPage] = pages
 
     def connect_neighbors(self, previous_chapter, next_chapter):

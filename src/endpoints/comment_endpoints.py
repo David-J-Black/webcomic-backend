@@ -1,14 +1,18 @@
+import json
+
 import flask
 from flask import Blueprint, jsonify, request, make_response
 from models import Pagination
 from service import comment_service
 from logger import log
 from models import SystemException
+from decorators import secure_route
 
-comment_blueprint = Blueprint('comment', __name__, url_prefix='/comment')
+comment_endpoints = Blueprint('comment', __name__, url_prefix='/comment')
 
 
-@comment_blueprint.route('/<int:chapter_number>/<int:page_number>', methods=['GET'])
+@comment_endpoints.route('/<int:chapter_number>/<int:page_number>', methods=['GET'])
+@secure_route
 def get_comments(chapter_number: int, page_number: int):
     """
     Get comments for an indicated page
@@ -31,14 +35,22 @@ def get_comments(chapter_number: int, page_number: int):
         return jsonify({'message': 'Problem getting comments'}), 500
 
 
-@comment_blueprint.route('/<int:chapter_number>/<int:page_number>',methods=['POST'])
+@comment_endpoints.route('/<int:chapter_number>/<int:page_number>', methods=['POST'])
+@secure_route
 def post_comment(chapter_number: int, page_number):
     try:
         log.info(f'Got a request to post a comment [ch: {chapter_number}, pg: {page_number}]')
-        saved_comment = comment_service.post_comment(chapter_number, page_number, request.get_json())
-        return flask.make_response(saved_comment.comment_guid)
+        comment_request = request
+
+        request_json = request.get_json()
+        request_json['authorIp'] = json.dumps(comment_request.access_route)
+        saved_comment: dict = comment_service.post_comment(chapter_number, page_number, request_json)
+
+        return flask.make_response(saved_comment.get('comment_guid'))
+
     except SystemException as se:
         return jsonify({'message': 'Problem getting comments...'}), se.code.value
+
     except Exception as e:
         log.warning(f'Ran into a problem trying to get comments!'
                     f'[chapter_number: {chapter_number}, page_number: {page_number}]', exc_info=e)

@@ -1,6 +1,10 @@
 from datetime import datetime
 from database import database
 
+# ----
+# Making everything separated into Models and standard Objects like this might be stupid,
+# But fuck it, I'm stupid myself.
+# ----
 
 class ComicPageModel(database.Model):
     """
@@ -29,9 +33,11 @@ class CommentModel(database.Model):
     page_id = database.Column(database.Integer)
     body = database.Column(database.String)
     author = database.Column(database.String)
+    author_ip = database.Column(database.String)
     status = database.Column(database.String(1))
     create_dt = database.Column(database.Date, default=datetime.utcnow())
     update_dt = database.Column(database.Date, default=datetime.utcnow())
+
     def __repr__(self):
         return f'<Comment: comment_id{self.comment_id}: Page ID;{self.page_id}>'
 

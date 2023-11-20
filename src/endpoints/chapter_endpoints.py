@@ -1,16 +1,16 @@
 import traceback
 from flask import Blueprint, Response, jsonify, make_response
 from models import SystemException
-from service.Authentication import secure_route
+from decorators import secure_route
 from service import chapter_service
 from cache import chapter_cache
 from logger import log
 
-chapter_blueprint = Blueprint('chapter', __name__)
+chapter_endpoints = Blueprint('chapter', __name__)
 
 
 @secure_route
-@chapter_blueprint.route('/chapter/<int:chapter_number>', methods=['GET'])
+@chapter_endpoints.route('/chapter/<int:chapter_number>', methods=['GET'])
 def get_chapter(chapter_number: int) -> Response:
     # Flask/SQLAlchemy is fucky with imports
     from models.ChapterComponents import ComicChapterCached
@@ -22,7 +22,7 @@ def get_chapter(chapter_number: int) -> Response:
 
 
 @secure_route
-@chapter_blueprint.route('/manage/refreshCaches')
+@chapter_endpoints.route('/manage/refreshCaches')
 def refresh_caches():
     try:
         chapter_cache.refresh()
@@ -31,7 +31,8 @@ def refresh_caches():
         return jsonify({'error': str(e)}), 500
 
 
-@chapter_blueprint.route('/chapter/all')
+@secure_route
+@chapter_endpoints.route('/chapter/all')
 def get_all_chapters():
     try:
         log.info(f'Request to get all chapters')

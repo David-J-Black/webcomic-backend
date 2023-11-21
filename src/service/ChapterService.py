@@ -1,5 +1,5 @@
 import traceback
-from typing import Dict
+from typing import Dict, List
 from flask import Blueprint
 from models import (
     ComicChapterCached,
@@ -37,15 +37,15 @@ class ChapterService:
         :return:
         """
 
-    def get_table_of_contents(self) -> dict[int, dict]:
+    def get_table_of_contents(self) -> List[Dict]:
         try:
             all_chapters: Dict[int, ComicChapterCached] = chapter_cache.get_all_chapters()
-            response: dict = {}
+            response: List[Dict] = []
 
             for chapter_key in all_chapters.keys():
                 chapter: ComicChapterCached = all_chapters.get(chapter_key)
                 simplified_chapter = TableOfContentsChapter(chapter)
-                response[chapter_key] = simplified_chapter.to_dto()
+                response.append(simplified_chapter.to_dto())
             return response
 
         except Exception as e:

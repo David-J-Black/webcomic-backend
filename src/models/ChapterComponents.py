@@ -78,6 +78,7 @@ class TableOfContentsChapter:
     """
     def __init__(self, comic_chapter: ComicChapterCached):
         self.chapter_number: int = comic_chapter.simple_chapter.chapter_number
+        self.description: str = comic_chapter.simple_chapter.description
         self.pages: list[ComicPage] = comic_chapter.pages
 
     def to_dto(self) -> dict[str, any]:
@@ -93,7 +94,8 @@ class TableOfContentsChapter:
 
         return {
             'chapterNumber': self.chapter_number,
-            'pages:': dto_pages
+            'description': self.description,
+            'pages': dto_pages
         }
 # ===== Elements of a page =====
 # self.page_id = model.page_id

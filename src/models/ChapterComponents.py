@@ -80,6 +80,7 @@ class TableOfContentsChapter:
         self.chapter_number: int = comic_chapter.simple_chapter.chapter_number
         self.description: str = comic_chapter.simple_chapter.description
         self.pages: list[ComicPage] = comic_chapter.pages
+        self.title: str = comic_chapter.simple_chapter.title
 
     def to_dto(self) -> dict[str, any]:
         dto_pages: list[dict] = []
@@ -93,6 +94,7 @@ class TableOfContentsChapter:
             dto_pages.append(dto_page)
 
         return {
+            'title': self.title,
             'chapterNumber': self.chapter_number,
             'description': self.description,
             'pages': dto_pages

@@ -99,15 +99,3 @@ class TableOfContentsChapter:
             'description': self.description,
             'pages': dto_pages
         }
-# ===== Elements of a page =====
-# self.page_id = model.page_id
-# self.chapter_id = model.chapter_id
-# self.page_number = model.page_number
-# self.release_date = model.release_date
-# self.description = model.description
-# self.page_position = model.page_position
-# self.image_name = model.image_name
-# # image_data: bytes
-# self.status = model.status
-# self.created_at = model.created_at
-# self.updated_at = model.updated_at

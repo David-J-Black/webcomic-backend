@@ -37,7 +37,24 @@ class ChapterService:
         :return:
         """
 
+    def get_page_id(self, chapter_number: int, page_number: int):
+        page: ComicPageCached = chapter_cache.get_comic_page(chapter_number, page_number)
+
+        if page is None:
+            log.warning(f'No page found for get_page_id(chapter_number:{chapter_number}, page_number: {page_number}')
+            return None
+
+        return page.comic_page.page_id
+
+
     def get_table_of_contents(self) -> List[Dict]:
+        """
+        Returns the table of contents of all chapters in the comic.
+
+        :return: A list of dictionaries representing the table of contents. Each dictionary
+            contains the information of a chapter, including its key, title, and other relevant details.
+        :rtype: List[Dict]
+        """
         try:
             all_chapters: Dict[int, ComicChapterCached] = chapter_cache.get_all_chapters()
             response: List[Dict] = []
@@ -51,12 +68,3 @@ class ChapterService:
         except Exception as e:
             log.warning(f'Error Trying to get all chapters: {traceback.format_exc()}')
             raise e
-
-    def get_page_id(self, chapter_number: int, page_number: int):
-        page: ComicPageCached = chapter_cache.get_comic_page(chapter_number, page_number)
-
-        if page is None:
-            log.warning(f'No page found for get_page_id(chapter_number:{chapter_number}, page_number: {page_number}')
-            return None
-
-        return page.comic_page.page_id

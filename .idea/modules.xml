@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/webcomic-backend.iml" filepath="$PROJECT_DIR$/.idea/webcomic-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webcomic-spring-backend/webcomic-spring-backend.iml" filepath="$PROJECT_DIR$/webcomic-spring-backend/webcomic-spring-backend.iml" />
     </modules>
   </component>
 </project>

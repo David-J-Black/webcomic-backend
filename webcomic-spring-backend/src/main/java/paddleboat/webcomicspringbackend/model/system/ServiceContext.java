@@ -1,5 +1,6 @@
 package paddleboat.webcomicspringbackend.model.system;
 
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
@@ -18,6 +19,7 @@ public class ServiceContext {
     private HttpStatus httpStatus;
     private String executionId;
     private String sessionIp;
+    private String callUrl;
 
     private Instant startTime;
     private Instant endTime;
@@ -58,13 +60,25 @@ public class ServiceContext {
 
         if (ctx == null) {
             ctx = newContext(executionId);
-            log.debug("Creating new context. Requested executionId[{}] Context: [{}]", executionId, ctx);
+            log.info("Creating new context. Requested executionId[{}] Context: [{}]", executionId, ctx);
             return ctx;
         }
 
         // Resetting MDC map with the execution id from the inherited thread
         ctx.setExecutionId(ctx.getExecutionId());
         return ctx;
+    }
+
+    public void startServiceCall(HttpServletRequest request) {
+        log.info("Starting service call with request [{}]", request);
+        this.setStartTime(Instant.now());
+        this.setCallUrl(request.getRequestURI());
+        this.setSessionIp(request.getRemoteAddr());
+    }
+    public static void clearContext() {
+        log.info("Clearing context: [{}]", threadLocal.get() != null ? threadLocal.get().executionId : null);
+        threadLocal.remove();
+        MDC.remove("executionId");
     }
 
     public void endServiceCall() {

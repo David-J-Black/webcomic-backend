@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.Instant;
-import java.util.Date;
 
 @Entity
 @Data
@@ -16,11 +15,14 @@ public class ComicPage {
     private Long PageId;
     private Integer chapterId;
     private Integer pageNumber;
-    private Date releaseDate;
+    private Instant releaseDate;
     private String description;
     private String pagePosition;
     private String imageName;
     private Instant createDt;
     private Instant updateDt;
     private String status;
+
+    @Transient
+    private ComicChapter chapter;
 }

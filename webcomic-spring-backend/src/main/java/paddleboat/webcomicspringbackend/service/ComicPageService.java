@@ -4,8 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import paddleboat.webcomicspringbackend.model.PageIndex;
-import paddleboat.webcomicspringbackend.model.entitiy.ComicPage;
-import paddleboat.webcomicspringbackend.repository.ComicPageRepository;
+import paddleboat.webcomicspringbackend.model.dto.ComicPageDTO;
 import paddleboat.webcomicspringbackend.service.cache.ComicCache;
 
 import java.nio.file.Files;
@@ -20,8 +19,8 @@ public class ComicPageService {
 
     public byte[] getComicPageImage(PageIndex pageIndex) throws Exception {
         try {
-            log.debug("Getting image for comic page [{}]", pageIndex);
-            ComicPage page = comicCache.getPage(pageIndex);
+            log.info("Getting image for comic page [{}]", pageIndex);
+            paddleboat.webcomicspringbackend.model.entitiy.ComicPage page = comicCache.getComicPage(pageIndex);
 
             if (page == null) {
                 log.error("Null page! [{}]", pageIndex);
@@ -40,7 +39,14 @@ public class ComicPageService {
         }
     }
 
-//    public List<ComicPageDTO> getComicPages {
-//        this.comicCache
-//    }
+    public ComicPageDTO getComicPage(PageIndex pageIndex) {
+        paddleboat.webcomicspringbackend.model.entitiy.ComicPage comicPage = this.comicCache.getComicPage(pageIndex);
+
+        if (comicPage == null) {
+            log.warn("Got a null ComicPage from cache! [{}]", pageIndex);
+            return null;
+        }
+
+        return ComicPageDTO.from(comicPage);
+    }
 }

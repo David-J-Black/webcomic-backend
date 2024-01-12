@@ -2,12 +2,14 @@ package paddleboat.webcomicspringbackend.model.entitiy;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.ToString;
 
-import java.time.LocalDate;
-import java.util.HashMap;
+import java.time.Instant;
+import java.util.LinkedHashMap;
 
 @Entity
 @Data
+@ToString(exclude = {"previousChapter", "nextChapter", "pages"})
 @Table(name = "comic_chapter")
 public class ComicChapter {
 
@@ -16,13 +18,19 @@ public class ComicChapter {
     private Long chapterId;
     private Integer chapterNumber;
     private String title;
-    private LocalDate releaseDate;
+    private Instant releaseDate;
     private String description;
-    private LocalDate createdAt;
-    private LocalDate updatedAt;
+    private Instant createdAt;
+    private Instant updatedAt;
     private String status;
 
     @Transient
-    private HashMap<Integer, ComicPage> pages;
+    private LinkedHashMap<Integer, ComicPage> pages;
+
+    @Transient
+    private ComicChapter previousChapter;
+
+    @Transient
+    private ComicChapter nextChapter;
 
 }

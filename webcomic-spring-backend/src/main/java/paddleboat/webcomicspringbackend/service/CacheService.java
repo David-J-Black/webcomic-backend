@@ -16,7 +16,7 @@ public class CacheService {
     @PostConstruct
     public void init() {
         try {
-            log.debug("Loading Cache");
+            log.info("Loading Cache");
             comicCache.load();
         } catch (Exception e) {
             log.error("Problem loading cache!", e);

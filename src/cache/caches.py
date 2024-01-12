@@ -49,7 +49,7 @@ class ChapterCache:
                               f"page:{page.page_number}]")
                     else:
 
-                        log.debug(f'About to load page [ch: {chapter.chapter_number}, pg: {page.page_number}]')
+                        log.info(f'About to load page [ch: {chapter.chapter_number}, pg: {page.page_number}]')
                         comic_page_cache_chapter[page.page_number] = ComicPageCached(page, extended_chapter.to_dto())
 
             # Ok time to connect chapters
